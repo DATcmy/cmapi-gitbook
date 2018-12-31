@@ -115,7 +115,9 @@ int ReadOnly = 2; // normal read, system write
 int freeToUse = 3; // normal read, normal write
 ```
 
-
+{% hint style="info" %}
+ 一般情況下，唯讀的變數，名稱第一隻字是大寫。
+{% endhint %}
 
 ### 註解
 
