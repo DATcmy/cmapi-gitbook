@@ -10,8 +10,6 @@ CMAPI是基於PROS開發的 VEX V5機械人應用程序接口, 有助程式員�
 
 {% page-ref page="beginning.md" %}
 
-{% page-ref page="tutorials.md" %}
-
 {% page-ref page="api-document.md" %}
 
 {% page-ref page="collaboration.md" %}
