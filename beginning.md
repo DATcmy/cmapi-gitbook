@@ -43,22 +43,11 @@ lift(46);
 
 **同步執行下的指令流程圖**
 
-```text
-graph LR
-A(開始) --> B[向前行]
-B --> C[升降台]
-C --> D(結束)
-```
+![Imgur](https://i.imgur.com/6r2iftp.png)
 
 **異步執行下的指令流程圖**
 
-```text
-graph LR
-A(開始) --> B1[向前行]
-A(開始) --> B2[升降台]
-B1 --> C(結束)
-B2 --> C
-```
+![Imgur](https://i.imgur.com/89vRknc.png)
 
 ### await 關鍵字
 
