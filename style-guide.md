@@ -137,7 +137,7 @@ int useful = 1;
  * \param optionalThing
  *        optional object
  *        if do: very good
- *        else : nuulptr
+ *        else : nullptr
  * 
  * \return an integer that you want.
  */

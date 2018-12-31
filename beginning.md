@@ -35,7 +35,7 @@ lift(46) await;
 以上代碼執行次序為: 先執行**向前行**指令，等待指令完成後再執行**升降台**指令，因此指令是同步執行。
 
 ```cpp
-forward(120) ;
+forward(120);
 lift(46);
 ```
 
@@ -43,11 +43,22 @@ lift(46);
 
 **同步執行下的指令流程圖**
 
-![Imgur](https://i.imgur.com/6r2iftp.png)
+```text
+graph LR
+A(開始) --> B[向前行]
+B --> C[升降台]
+C --> D(結束)
+```
 
 **異步執行下的指令流程圖**
 
-![Imgur](https://i.imgur.com/89vRknc.png)
+```text
+graph LR
+A(開始) --> B1[向前行]
+A(開始) --> B2[升降台]
+B1 --> C(結束)
+B2 --> C
+```
 
 ### await 關鍵字
 
@@ -317,4 +328,6 @@ int value = GyroValue;
 // GyroValue 除以3600後的餘數 
 int azimuth = GyroValue % 3600;
 ```
+
+
 
