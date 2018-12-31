@@ -1,10 +1,8 @@
 # Beginning
 
-
-
 ## 基本概論
 
-在編寫自動程式前，必須理解以下的概念。本篇章著重概念上的知識，不是介紹指令的使用方法以及如何建立自動計劃，詳情請參考[指令文檔](API_Document.html)以及[教程](Tutorials.html)。
+在編寫自動程式前，必須理解以下的概念。本篇章著重概念上的知識，不是介紹指令的使用方法以及如何建立自動計劃，詳情請參考[指令文檔](https://github.com/cmass-robotics-team/cmapi-gitbook/tree/e3825c43c89310b9d09ecbf4d84bd058406c556c/API_Document.html)以及[教程](https://github.com/cmass-robotics-team/cmapi-gitbook/tree/e3825c43c89310b9d09ecbf4d84bd058406c556c/Tutorials.html)。
 
 ### 指令
 
@@ -43,11 +41,11 @@ lift(46);
 
 **同步執行下的指令流程圖**
 
-![Imgur](https://i.imgur.com/6r2iftp.png)
+![](https://i.imgur.com/6r2iftp.png)
 
 **異步執行下的指令流程圖**
 
-![Imgur](https://i.imgur.com/89vRknc.png)
+![](https://i.imgur.com/89vRknc.png)
 
 ### await 關鍵字
 
@@ -317,6 +315,4 @@ int value = GyroValue;
 // GyroValue 除以3600後的餘數 
 int azimuth = GyroValue % 3600;
 ```
-
-
 
