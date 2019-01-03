@@ -150,7 +150,7 @@ bool saveConfig();
 
 ## Core
 
-### action\\_brake\\_mode\\_e
+### action\_brake\_mode\_e
 
 此枚舉定義了不同類型的制動模式  
 可使用於移動指令
@@ -536,6 +536,15 @@ void initLCD();
 | Motor | mtrRightR | 右後輪 |
 | int | portGyro | 陀螺儀 |
 
+### angle_detection_sensor_e
+
+此枚舉定義了不同種類的檢測角度感應器
+
+| Enum |  |
+| :--- | :--- |
+| GYRO | 0 |
+| ENCODER | 1 |
+
 ### initMove
 
 ```cpp
@@ -675,7 +684,9 @@ action backward(const float cm,
 ### turnLeftToAzimuth
 
 ```cpp
-action turnLeftToAzimuth(const float angle, const short speed = 0, const double error = 1);
+action turnLeftToAzimuth(const float angle, 
+                         const short speed = 0, 
+                         const double error = 1);
 ```
 
 轉左到指定的絕對方位角並停下, 無論轉右到達目標是否近於轉左到達  
@@ -702,7 +713,9 @@ action turnLeftToAzimuth(const float angle, const short speed = 0, const double 
 ### turnRightToAzimuth
 
 ```cpp
-action turnRightToAzimuth(const float angle, const short speed = 0, const double error = 1);
+action turnRightToAzimuth(const float angle,
+                          const short speed = 0,
+                          const double error = 1);
 ```
 
 轉右到指定的絕對方位角並停下, 無論轉左到達目標是否近於轉右到達  
@@ -729,7 +742,10 @@ action turnRightToAzimuth(const float angle, const short speed = 0, const double
 ### turnLeft
 
 ```cpp
-action turnLeft(const float angle, const short speed = 0, const double error = 1);
+action turnLeft(const float angle, 
+                const short speed = 0, 
+                const double error = 1,
+                const angle_detection_sensor_e_t sensor = GYRO);
 ```
 
 轉左指定角度並停下
@@ -750,12 +766,19 @@ action turnLeft(const float angle, const short speed = 0, const double error = 1
   * `error`  
 
        判斷動作完成的誤差的容許範圍\(單位角度\)
+
+  * `sensor`  
+
+       檢測角度的感應器種類
 * **返回**: action結構以控制指令
 
 ### turnRight
 
 ```cpp
-action turnRight(const float angle, const short speed = 0, const double error = 1);
+action turnRight(const float angle, 
+                 const short speed = 0, 
+                 const double error = 1,
+                 const angle_detection_sensor_e_t sensor = GYRO);
 ```
 
 轉右指定角度並停下
@@ -776,6 +799,10 @@ action turnRight(const float angle, const short speed = 0, const double error = 
   * `error`  
 
        判斷動作完成的誤差的容許範圍\(單位角度\)
+
+  * `sensor`  
+
+       檢測角度的感應器種類
 * **返回**: action結構以控制指令
 
 ### keepMove
