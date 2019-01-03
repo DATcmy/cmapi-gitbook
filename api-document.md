@@ -150,7 +150,7 @@ bool saveConfig();
 
 ## Core
 
-### action\_brake\_mode\_e
+### action\\_brake\\_mode\\_e
 
 此枚舉定義了不同類型的制動模式  
 可使用於移動指令
