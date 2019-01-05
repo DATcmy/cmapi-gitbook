@@ -16,9 +16,9 @@
 
 ## Topical Tutorials
 
-* [Advanced Operator Control](tutorials/advanced-operator-control.md)
-* [Double-Side Auto Plan](tutorials/double-side-auto-plan.md)
-* [Asynchronous Event Listener](tutorials/asynchronous-event-listener.md)
-* [Customize Action](tutorials/customize-action.md)
-* [Create New Component API](tutorials/create-new-component-api.md)
+* [Advanced Operator Control](topical-tutorials/advanced-operator-control.md)
+* [Double-Side Auto Plan](topical-tutorials/double-side-auto-plan.md)
+* [Asynchronous Event Listener](topical-tutorials/asynchronous-event-listener.md)
+* [Customize Action](topical-tutorials/customize-action.md)
+* [Create New Component API](topical-tutorials/create-new-component-api.md)
 

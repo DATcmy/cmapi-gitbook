@@ -16,13 +16,13 @@
 
 如果您在閱讀API指令文件之後，想了解有關CMAPI進階部分的更多信息，那麼Topical Tutorials提供了不同主題的示例以及有關使用API的更多詳細信息。
 
-{% page-ref page="tutorials/advanced-operator-control.md" %}
+{% page-ref page="topical-tutorials/advanced-operator-control.md" %}
 
-{% page-ref page="tutorials/double-side-auto-plan.md" %}
+{% page-ref page="topical-tutorials/double-side-auto-plan.md" %}
 
-{% page-ref page="tutorials/asynchronous-event-listener.md" %}
+{% page-ref page="topical-tutorials/asynchronous-event-listener.md" %}
 
-{% page-ref page="tutorials/customize-action.md" %}
+{% page-ref page="topical-tutorials/customize-action.md" %}
 
-{% page-ref page="tutorials/create-new-component-api.md" %}
+{% page-ref page="topical-tutorials/create-new-component-api.md" %}
 
