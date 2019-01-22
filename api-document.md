@@ -62,7 +62,7 @@ redonly turnLeft(90) blueonly turnRight(90);
 ### blueonly
 
 ```cpp
-#define redonly ;_blueonly();
+#define blueonly ;_blueonly();
 ```
 
 聲明下一個指令只適用於藍方區域的自動程序, 如果執行區域為紅區, 指令將不會被執行  
