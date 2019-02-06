@@ -1,6 +1,6 @@
 # API Document
 
-## \#define
+## Marco
 
 ### limit
 
@@ -100,7 +100,7 @@ waiting(LiftTarget == 0 && MoveTargetL == 0);
 
 | type | name | detail |
 | :--- | :--- | :--- |
-| Motor | mtrArm | 手臂 |
+| std::vector&lt;Motor&gt; | groupArm | 手臂 |
 
 ### arm
 
@@ -523,16 +523,21 @@ void initLCD();
 | PID | pidTurnFar | 轉彎指令長距離 PID 控制類 |
 | double | leftMargin | 向左轉偏移加成 |
 | double | rightMargin | 向右轉偏移加成 |
+| float | WHEEL\_RADIUS  | 輪子直徑 |
+| float | GEAR\_RATIO  | 齒輪比例 |
+| float | TICKS\_PRE\_90DEGREE  | 輪子旋轉多小度等於機械轉90度 |
 
 #### 馬達與感應器
 
 | type | name | detail |
 | :--- | :--- | :--- |
-| Motor | mtrLeftF | 左前輪 |
-| Motor | mtrLeftR | 左後輪 |
-| Motor | mtrRightF | 右前輪 |
-| Motor | mtrRightR | 右後輪 |
-| int | portGyro | 陀螺儀 |
+| std::vector&lt;Motor&gt; | groupLeft | 左輪 |
+| std::vector&lt;Motor&gt; | groupLeftF | 左前輪 |
+| std::vector&lt;Motor&gt; | groupLeftR | 左後輪 |
+| std::vector&lt;Motor&gt; | groupRight | 右輪 |
+| std::vector&lt;Motor&gt; | groupRightF | 右前輪 |
+| std::vector&lt;Motor&gt; | groupRightR | 右後輪 |
+| short | portGyro | 陀螺儀 |
 
 ### angle\_detection\_sensor\_e
 
@@ -887,7 +892,7 @@ action holdMove(const bool isenable = true);
 
 | type | name | detail |
 | :--- | :--- | :--- |
-| Motor | mtrRoller | 滾筒 |
+| std::vector&lt;Motor&gt; | groupRoller | 滾筒 |
 
 ### roller
 
@@ -927,7 +932,7 @@ action roller(const short speed, const int waitms = 0);
 
 | type | name | detail |
 | :--- | :--- | :--- |
-| Motor | mtrShooter | 發射器 |
+| std::vector&lt;Motor&gt; | groupShooter | 發射器 |
 
 ### arm
 

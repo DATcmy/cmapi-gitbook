@@ -44,48 +44,71 @@ Git 的界面控制軟件, 推薦給初學者
 
 以下步驟將會教你如何開啟一個項目
 
-開啟一個新的資料夾 /cmapi-basic，然後通過運行以下命令克隆CMAPI git repo的副本：
+進入[https://bitbucket.org/vex7984/cmapi/downloads/](https://bitbucket.org/vex7984/cmapi/downloads/) 下載最新版本的代碼庫
+
+創建一個新的資料夾用來放置機械人的程式碼
+
+然後開啟控制台輸入以下指令，註冊一個新的項目
 
 ```text
-git clone https://bitbucket.org/vex7984/cmapi.git
+prosv5 c new-project {資料夾位置}
 ```
 
-然後切換到支線 /basic
+輸入以下指令安裝代碼庫到項目中
 
 ```text
-git checkout -t origin/basic
+prosv5 c fetch {代碼庫位置}
+prosv5 c apply CMAPI --upgrade-all-user-files
 ```
 
-Basic 支線下的檔案是運行CMAPI的基本檔案，將所有檔案及資料夾\(除了.git\)複製到機器人的項目資料夾裏，完成後可以開始編寫代碼，而不會影響CMAPI的源代碼
+代碼庫安裝成功後便可以開始編寫代碼
 
 ### 運行測試
 
 如果要確保編譯後的的程式為最新版本，可以跟從以下步驟:
 
-#### 清除所有編譯快取
+#### 清除所有快取並且重新編譯
 
+{% tabs %}
+{% tab title="IDE" %}
 在PROS Atom IDE 執行:
 
 ```text
-PROS: Build Project (clean)
+PROS: Build Project (All)
 ```
+{% endtab %}
 
-#### **重新編譯所有程序**
-
-在PROS Atom IDE 執行:
+{% tab title="Console" %}
+在控制台執行:
 
 ```text
-PROS: Build Project
+prosv5 make all
 ```
+{% endtab %}
+{% endtabs %}
 
 ### 部署
 
-將電腦連接機械人  
+將電腦連接機械人
+
+{% tabs %}
+{% tab title="IDE" %}
 在PROS Atom IDE 執行:
 
 ```text
 PROS: Quick Action
 ```
+{% endtab %}
+
+{% tab title="Console" %}
+在控制台執行:
+
+```text
+prosv5 make
+prosv5 upload --run-after
+```
+{% endtab %}
+{% endtabs %}
 
 程式成功下載後便會自動運行
 
