@@ -10,9 +10,9 @@
 ## Walkthrough Tutorials
 
 * [Setup Basic Chassis](walkthrough-tutorials/setup-basic-chassis.md)
-* [Setup API And Sensors](walkthrough-tutorials/setup-api-and-sensors.md)
+* [Setup Variable And Sensors](walkthrough-tutorials/setup-api-and-sensors.md)
 * [Create Auto Plan](walkthrough-tutorials/create-auto-plan.md)
-* [Add Plugins To Your Robot](walkthrough-tutorials/add-plugins-to-your-robot.md)
+* [Add A Component](walkthrough-tutorials/add-a-component.md)
 
 ## Topical Tutorials
 

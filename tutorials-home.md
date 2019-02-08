@@ -10,7 +10,7 @@
 
 {% page-ref page="walkthrough-tutorials/create-auto-plan.md" %}
 
-{% page-ref page="walkthrough-tutorials/add-plugins-to-your-robot.md" %}
+{% page-ref page="walkthrough-tutorials/add-a-component.md" %}
 
 ### Topical Tutorials
 
